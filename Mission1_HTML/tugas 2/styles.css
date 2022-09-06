@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anek Telugu', sans-serif;
+}
+
+.container{
+    padding: 1.1% 16% 0 13.3%;
+}
+
+.navbar{
+    height: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 195px;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    margin-left: 25px;
+    padding: 5px;
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #778298;
+    font-size: 17px;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+article{
+    margin: auto;
+    margin-top: 3.5rem;
+    max-width: 72%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    margin: 10px;
+    padding: 2rem;
+    border-radius: 4px;
+    background-color: #e9ecef;
+}
+
+.content{
+    padding: 20px 10px;
+    display: flex;
+    gap: 30px;
+}
+
+.image{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 300px;
+    display: block;
+    border-radius: 4px;
+}
+
+.image img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.content-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+  
+.content-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 10px;
+}
+
+.rounded{
+    width: 40px;
+    border-radius: 50%;
+}
+
+aside {
+    margin: 150px auto 50px;
+    width: 40%;
+}
+
+.email{
+    display: flex;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.email input{
+    padding: 10px 15px;
+    width: 70%;
+    border: 0;
+}
+
+/* Utils */
+.btn{
+    padding: 6px 17px 6px 17px;
+    width: max-content;
+    border-radius: 4px;
+    display: block;
+    font-weight: 900;
+    font-size: 15px;
+    color: black;
+    cursor: pointer;
+}
+
+.btn-shadow{
+    box-shadow: 0 1px 2px 0 rgb(0, 0, 0, .5);
+}
+
+.btn-white{
+    background-color: white;
+}
+
+.btn-white:hover{
+    text-decoration: none;
+}
+
+.btn-green{
+    background-color: #65d777;
+}
+
+.btn-green:hover{
+    text-decoration: none;
+}
+
+.btn-width1{
+    width: 40%;
+}
+
+.mb-10{
+    margin-bottom: 10px;
+}
+
+.mt-20{
+    margin-top: 20px;
+}
+
+.mt-30{
+    margin-top: 30px;
+}
+
+.mt-50{
+    margin-top: 50px;
+}
+
+.mtb-10{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.mtb-30{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.border-top{
+    border-top: 0.8px solid #e9ecef;
+    padding: 10px 0 0 0;
+}
+
+/* Utils for Font/Text */
+.f-weight3{
+    font-weight: 300;
+}
+
+.f-size1{
+    font-size: 30px;
+}
+
+.f-size2{
+    font-size: 26px;
+}
+
+.f-size3{
+    font-size: 22px;
+}
+
+.f-size4{
+    font-size: 20px;
+}
+
+.f-size5{
+    font-size: 17px;
+}
+
+.c-grey{
+    color: #778298;
+}
+
+.c-red{
+    color: red;
+}
+
+.c-white{
+    color: white;
+}
+
+.none-underline{
+    text-decoration: none;
+}
+
+.red-underline:hover{
+    text-decoration-color: red;
+}
+
+.txt-center{
+    text-align: center;
+}
+
+/* Responsive section */
+@media screen and (max-width: 1180px){
+    .container{
+        padding: 1.5% 3% 0 5%;
+    }
+}
+
+@media screen and (max-width: 840px){
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    nav ul li{
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 35px;
+    }
+
+    article{
+        max-width: 96%;
+        margin-top: 1.5rem;
+    }
+
+    .content-footer{
+        display: block;
+    }
+
+    .profile{
+        display: block;
+        justify-content: left;
+    }
+
+    .image{
+        display: none;
+    }
+
+    aside{
+        width: 100%;
+    }
+
+    .email{
+        flex-direction: column;
+    }
+    
+    .email .btn{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 630px){
+    header nav{
+        width: 100%;
+        margin: 15px 0;
+        padding: 5px;
+        border-top: 1px solid #9ea9bc;
+        border-bottom: 1px solid #9ea9bc;
+        text-align: left;
+    }
+
+    footer nav{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+    }
+}

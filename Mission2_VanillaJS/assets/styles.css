@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Serif', serif;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.container{
+    padding: 5px 50px;
+}
+
+header .container{
+    margin: 0;
+}
+
+.navbar{
+    height: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 100px;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    margin-left: 25px;
+    padding: 5px;
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.main-content{
+    display: flex;
+}
+
+.title-main{
+    padding-right: 15%;
+    margin: auto;
+}
+
+.main-content .images{
+    margin-left: 20%;
+    width: 450px;
+    display: block;
+}
+
+.set-image1 {
+    width: 100%;
+}
+
+.set-image2 {
+    width: 800%;
+    border-radius: 5px;
+}
+
+.intro-content .images{
+    margin-right: 20%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.intro-content{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    text-align: left;
+    gap: 20px;
+    padding: 10% 20%;
+}
+
+.movie-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card{
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #e9ecef;
+    width: 18%;
+    text-align: left;
+}
+
+.char-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.char-content .container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.rounded{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.name{
+    text-align: center;
+}
+
+footer .container{
+    margin-top: 0;
+    margin-bottom: 0; 
+}
+
+/* Utils for Font/Text */
+.f-weight3{
+    font-weight: 300;
+}
+
+.f-size1{
+    font-size: 70px;
+}
+
+.f-size2{
+    font-size: 45px;
+}
+
+.f-size3{
+    font-size: 27px;
+}
+
+.f-size4{
+    font-size: 17px;
+}
+
+.f-size5{
+    font-size: 12px;
+}
+
+.upper{
+    text-transform: uppercase
+}
+
+.lower{
+    text-transform: lowercase
+}
+
+/* Utils */
+.box-shadow{
+    box-shadow: 0 4px 4px rgba(0,0,0,0.35);
+}
+
+.bg-whitesmoke{
+    background-color: whitesmoke;
+}
+
+.mtb30{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.mtb50{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.mtb100{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.mt30{
+    margin-top: 30px;
+}
+
+.mt100{
+    margin-top: 100px;
+}
+
+.mb10{
+    margin-bottom: 10px;
+}
+
+.mb20{
+    margin-bottom: 20px;
+}
+
+.mb50{
+    margin-bottom: 50px;
+}
+
+.pad1{
+    padding-left: 40px;
+    padding-bottom: 20px;
+}
+
+.pad2{
+    padding-left: 40px;
+}
+
+/* Javascript Scroll */
+.js-scroll {
+    opacity: 0;
+    transform: scale(0.1);
+    transition: all 1s ease-in-out;
+}
+
+.active {
+    opacity: 1;
+    transform: scale(1);
+}

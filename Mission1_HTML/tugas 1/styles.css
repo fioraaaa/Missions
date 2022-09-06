@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #ddd;
+}
+
+.font{ /* default warna hitam */
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.font-color-yellow{
+    color: #ECEF5F;
+}
+
+.container{
+    display: grid;
+    width: 90%;
+    height: 100%;
+    margin: 50px auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.box{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Box */
+.box1{ /* box merah */
+    grid-column: 1;
+    grid-row: 1 / span 3;
+}
+
+.box2{ /* box hijau */
+    grid-column: 2 / span 2;
+    grid-row: 1;
+}
+
+.box3{ /* box ungu */
+    grid-column: 4 / span 2;
+    grid-row: 1;
+}
+
+.box4{ /* box jingga */
+    grid-column: 1;
+    grid-row: 4 / span 3;
+}
+
+.box5{ /* box pink */
+    grid-column: 2;
+    grid-row: 2 / span 3;
+}
+
+.box6{ /* box hijau muda */
+    grid-column: 3 / span 3;
+    grid-row: 2;
+}
+
+.box7{ /* box biru */
+    grid-column: 3;
+    grid-row: 3 / span 2;
+}
+
+.box8{ /* box kuning */
+    grid-column: 2 / span 2;
+    grid-row: 5 / span 2;
+}
+
+.box9{ /* box biru tua */
+    grid-column: 4 / span 2;
+    grid-row: 3 / span 4;
+}
+
+/* color */
+.color-red{
+    background-color: #D93B3B;
+}
+
+.color-green{
+    background-color: #1aa518;
+}
+
+.color-purple{
+    background-color: #B078A1;
+}
+
+.color-orange{
+    background-color: #F7A429;
+}
+
+.color-pink{
+    background-color: #FFA9E7; 
+}
+
+.color-yellow{
+    background-color: #ECEF5F;
+}
+
+.color-navy{
+    background-color: #110f6c;
+}
